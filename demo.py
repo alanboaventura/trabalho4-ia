@@ -1,4 +1,5 @@
 from correlacao import correcao
+from regressao import regressao
 
 # datasets
 x1 = [10,8,13,9,11,14,6,4,12,7,5];
@@ -11,9 +12,25 @@ x3 = [8,8,8,8,8,8,8,8,8,8,19];
 y3 = [6.58,5.76,7.71,8.84,8.47,7.04,5.25,5.56,7.91,6.89,12.50];
 
 r1 = correcao(x1, y1)
-r2 = correcao(x2, y2)
-r3 = correcao(x3, y3)
+b0, b1 = regressao(x1, y1)
 
 print("r1 " + str(r1))
-print("r2 " + str(r2))
-print("r3 " + str(r3))
+print("b0 " + str(b0))
+print("b1 " + str(b1))
+print("")
+
+r1 = correcao(x2, y2)
+b0, b1 = regressao(x2, y2)
+
+print("r1 " + str(r1))
+print("b0 " + str(b0))
+print("b1 " + str(b1))
+print("")
+
+r1 = correcao(x3, y3)
+b0, b1 = regressao(x3, y3)
+
+print("r1 " + str(r1))
+print("b0 " + str(b0))
+print("b1 " + str(b1))
+print("")
