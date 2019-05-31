@@ -3,7 +3,7 @@ import statistics
 # Essa função será responsável por calcular a correlação de dois vetores recebidos por parâmetro.
 # O código está preparado para trabalhar com vetores Nx1, mas é necessário que ambos tenham o mesmo valor de N, ou seja,
 # o mesmo número de colunas
-def correcao(vetor_x, vetor_y):
+def correlacao(vetor_x, vetor_y):
 
     # Equação de correlação utilizada nessa função
     # r = Σ(x−x̄)(y−ȳ) / √(Σ(x−x̄)² Σ(y−ȳ)²)
