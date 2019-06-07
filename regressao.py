@@ -2,9 +2,6 @@ import statistics
 
 
 def regressao(vetor_x, vetor_y):
-    b0 = 0
-    b1 = 0
-
     # Equação de regressão
     # y = β0 + β1x
     # Onde:

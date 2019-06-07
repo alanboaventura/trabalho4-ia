@@ -18,6 +18,7 @@ def correlacao(vetor_x, vetor_y):
 
     dividendo = 0
 
+    # a = ((vetor_x - media_x) .* (vetor_y - media_y))
     # Realiza o calculo do dividendo
     for i in range(len(vetor_x)):
         dividendo += ((vetor_x[i] - media_x) * (vetor_y[i] - media_y))
