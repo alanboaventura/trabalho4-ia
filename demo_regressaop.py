@@ -16,4 +16,3 @@ plt.plot(x, r)
 plt.ylabel("y")
 plt.xlabel("x")
 plt.show()
-

@@ -1,10 +1,10 @@
 import statistics
 
+
 # Essa função será responsável por calcular a correlação de dois vetores recebidos por parâmetro.
 # O código está preparado para trabalhar com vetores Nx1, mas é necessário que ambos tenham o mesmo valor de N, ou seja,
 # o mesmo número de colunas
 def correlacao(vetor_x, vetor_y):
-
     # Equação de correlação utilizada nessa função
     # r = Σ(x−x̄)(y−ȳ) / √(Σ(x−x̄)² Σ(y−ȳ)²)
     # Para facilitar a visualização, a equação está divida em 3 variáveis
@@ -34,6 +34,6 @@ def correlacao(vetor_x, vetor_y):
         divisor1 += ((vetor_x[i] - media_x) ** 2)
         divisor2 += ((vetor_y[i] - media_y) ** 2)
 
-    divisorFinal = (divisor1 * divisor2) ** (1/2)
+    divisor_final = (divisor1 * divisor2) ** (1 / 2)
 
-    return round(dividendo / divisorFinal, 4)
+    return round(dividendo / divisor_final, 4)

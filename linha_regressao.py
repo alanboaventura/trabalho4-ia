@@ -1,8 +1,8 @@
 def criar_linha(b0, b1, vetor_x):
-    linhaRegressao = []
+    linha_regressao = []
 
     for i in range(len(vetor_x)):
         y = b0 + (b1 * vetor_x[i])
-        linhaRegressao += [y]
+        linha_regressao += [y]
 
-    return linhaRegressao
+    return linha_regressao
