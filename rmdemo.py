@@ -47,8 +47,17 @@ ax = plt.axes(projection='3d')
 
 ax.plot3D(X[:, 1], X[:, 2], linha_regressao.flatten(), 'gray')
 ax.scatter3D(X[:, 1], X[:, 2], y[:, 0])
+
 plt.title("Correlações: \n Tamanho da casa x Preço: " + str(r_tamanho_preco) +
           " \n Número de quartos x Preço: " + str(r_quartos_preco) + "\n\n")
 
-print(linha_regressao)
+# 1650 e 3 quartos
+X_E = np.array([1650, 3])
+
+# 𝑦̂= X*𝛽
+valor = X_E.dot(B)
+
+print("g) Calcule o preço de uma casa que tem tamanho de 1650 e 3 quartos. O resultado deve ser igual a 293081.")
+print("R: " + str(valor))
+
 plt.show()
