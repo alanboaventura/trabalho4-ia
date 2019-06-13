@@ -1,7 +1,17 @@
 import matplotlib.pyplot as plt
-from correlacao import correlacao
-from regressao import regressao
-from linha_regressao import criar_linha
+from parte1.correlacao import correlacao
+from parte1.regressao import regressao
+
+
+def criar_linha(b0, b1, vetor_x):
+    linha_regressao = []
+
+    for i in range(len(vetor_x)):
+        y = b0 + (b1 * vetor_x[i])
+        linha_regressao += [y]
+
+    return linha_regressao
+
 
 def gerar_grafico(x, y, b0, b1, r):
       plt.scatter(x, y)

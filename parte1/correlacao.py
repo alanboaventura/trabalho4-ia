@@ -10,7 +10,7 @@ def correlacao(vetor_x, vetor_y):
     # Para facilitar a visualização, a equação está divida em 3 variáveis
     # dividendo = Σ(x−x̄)(y−ȳ)
     # divisor1 = Σ(x−x̄)²
-    # divisor2 = Σ(y−ȳ)²
+    # divisor2 = Σ(y−ȳ)
 
     # Calcula a média dos valores dos vetores através da função mean
     media_x = statistics.mean(vetor_x)
@@ -18,7 +18,6 @@ def correlacao(vetor_x, vetor_y):
 
     dividendo = 0
 
-    # a = ((vetor_x - media_x) .* (vetor_y - media_y))
     # Realiza o calculo do dividendo
     for i in range(len(vetor_x)):
         dividendo += ((vetor_x[i] - media_x) * (vetor_y[i] - media_y))

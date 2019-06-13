@@ -1,11 +1,10 @@
 import numpy as np
 
-
 def regmultipla(x, y):
     # Equação para os parâmetros do modelo
     # 𝛽= (Xt X)-¹ Xt y
 
-    X_values = x[:, (1, 2)]
+    X_values = x[:, (0, 1, 2)]
     # Xt X
     matriz_vezes_transposta = np.dot(X_values.T, X_values)
     # (Xt X)-¹
